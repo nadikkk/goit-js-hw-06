@@ -7,5 +7,7 @@ const text = document.querySelector(".color");
 button.addEventListener ("click", onChangeColor);
 
 function onChangeColor(event) {
-	text.textContent=getRandomHexColor();
+	const color = getRandomHexColor()
+	text.textContent=color;
+	text.style.backgroundColor = color;
 }
